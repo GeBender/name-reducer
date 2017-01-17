@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The Name Reducer</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="client/bower_components/bootstrap/dist/css/bootstrap.css">
+
+  </head>
+  <body>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+  	      <a class="navbar-brand" href="#">The Name Reducer!</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+	  <h3>Lets reduce some name. <small>Just type a name click the "Reduce name!" button</small></h3>
+        <form method="POST" id="name-form">
+          <div class="form-group">
+            <label for="nameInput">Name to be reduced</label>
+              <input type="text" required="required" id="nameInput" class="form-control">
+          </div>
+          <button type="submit" class="btn btn-success">Reduce name!</button>
+        </form>
+      <br/>
+
+      <div id="response-container"></div>
+      
+    </div>
+    
+    <script src="client/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="client/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="client/js/functions.js"></script>
+
+  </body>
+</html>
